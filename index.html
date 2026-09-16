@@ -208,6 +208,40 @@
             margin-top: 15px;
         }
 
+        .transport-info {
+            background-color: #f3f4f6;
+            border: 1px solid #e2e8f0;
+            color: #59636f;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            margin-top: 12px;
+        }
+
+        .transport-info strong {
+            color: #4a5568;
+        }
+
+        .booking-link {
+            color: #8a5a00;
+            font-weight: 600;
+            font-size: 0.82em;
+            text-decoration: none;
+            background-color: #fef3c7;
+            border: 1px solid #f6d365;
+            padding: 4px 10px;
+            border-radius: 7px;
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .booking-link:hover {
+            color: #6b4600;
+            background-color: #fde68a;
+            border-color: #f0c84b;
+        }
+
         .note-info {
             background-color: #fffaf0;
             border: 1px solid #feebc8;
@@ -218,6 +252,28 @@
             margin-top: 10px;
         }
     </style>
+
+<style>
+/* 訂位圖片：點擊後在原位置下方展開 */
+.booking-image-preview {
+    display: none;
+    margin: 10px 0 6px 0;
+    padding: 8px;
+    background: #fffdf5;
+    border: 1px solid #f6d365;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.booking-image-preview img {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+</style>
+
 </head>
 <body>
 
@@ -258,11 +314,8 @@
             <div class="section-block">
                 <div class="section-title">✈️ 航班/交通</div>
                 <ul>
-                    <li><span class="badge bg-flight">班機</span> 19:40 桃園國際機場起飛</li>
+                    <li><span class="badge bg-flight">班機</span> 19:40 桃園國際機場起飛
                 </ul>
-            </div>
-            <div class="hotel-info">
-                🏠 <strong>住宿：</strong> 機上跨夜飛行
             </div>
         </div>
     </div>
@@ -351,17 +404,18 @@
             <div class="section-block">
                 <div class="section-title">✈️ 航班與成員動態</div>
                 <ul>
-                    <li>魚、薇：早上 07:20 抵達里斯本</li>
-                    <li>該、柔：搭乘 09:40 班機返回里斯本</li>
+                    <li>魚、薇：早上 07:20 抵達里斯本 </li>
+                    <li>該、柔：搭乘 09:40 班機返回里斯本 </li>
                 </ul>
             </div>
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li><strong>阿爾法瑪區：</strong><a class="map-link" href="https://maps.google.com/?q=Feira+da+Ladr%C3%A3" target="_blank">📍女賊市集 Feira da Ladra</a>、<a class="map-link" href="https://maps.google.com/?q=National+Tile+Museum+Lisbon" target="_blank">📍國立磁磚博物館</a>（出發前查看營業狀態）、<a class="map-link" href="https://maps.google.com/?q=Castelo+de+S%C3%A3o+Jorge" target="_blank">📍聖若熱城堡</a>夕陽（日落時間約七點）</li>
+                    <li><strong>阿爾法瑪區：</strong><a class="map-link" href="https://maps.google.com/?q=Feira+da+Ladr%C3%A3" target="_blank">📍女賊市集 Feira da Ladra</a>、<a class="map-link" href="https://maps.google.com/?q=Castelo+de+S%C3%A3o+Jorge" target="_blank">📍聖若熱城堡</a>夕陽（日落時間約七點）</li>
                     <li>視情況可加：<a class="map-link" href="https://maps.google.com/?q=Miradouro+das+Portas+do+Sol" target="_blank">📍Miradouro das Portas do Sol 觀景台</a></li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚇 交通建議：住宿 → 女賊市集 Feira da Ladra 建議步行或搭短程電車／公車；里斯本機場 → 住宿可搭地鐵或 Uber/Bolt；阿爾法瑪坡多且石板路多，景點間以步行＋短程電車／公車最省力。</strong></div>
             <div class="section-block">
                 <div class="section-title">🛍️ 備選逛街</div>
                 <ul>
@@ -393,9 +447,10 @@
                 <ul>
                     <li><strong>上午 Belém 區：</strong>蛋塔、<a class="map-link" href="https://maps.google.com/?q=Jer%C3%B3nimos+Monastery" target="_blank">📍熱羅尼莫斯修道院</a>、河岸、<a class="map-link" href="https://maps.google.com/?q=Padr%C3%A3o+dos+Descobrimentos" target="_blank">📍發現者紀念碑</a>（可不用進去）</li>
                     <li><strong>下午：</strong><a class="map-link" href="https://maps.google.com/?q=LX+Factory" target="_blank">📍LX Factory 文創園區</a>、<a class="map-link" href="https://maps.google.com/?q=Elevador+da+Bica" target="_blank">📍Bica 電車</a>、<a class="map-link" href="https://maps.google.com/?q=Chiado+Lisbon" target="_blank">📍Chiado 區散步</a>（若沒吃到晚餐這邊也可以）</li>
-                    <li><span class="badge bg-booked">已訂位 19:00</span> 餐廳: <a class="map-link" href="https://maps.google.com/?q=Taberna+Sal+Grosso+Lisbon" target="_blank">📍Taberna Sal Grosso São Bento</a> (魚仔找的餐廳)</li>
+                    <li><span class="badge bg-booked">已訂位 10:00</span><a class="booking-link" href="./pic/0927_1900_餐廳.jpg" onclick="return toggleBookingImage(event, 'bookingImage1', this);">📎 訂位圖片</a><div id="bookingImage1" class="booking-image-preview"><img src="./pic/0927_1900_餐廳.jpg" alt="訂位圖片"></div><div id="bookingImage1" class="booking-image-preview"><img src="./pic/0928_1000_餐廳訂位.jpg" alt="訂位圖片"></div> 餐廳: <a class="map-link" href="https://maps.google.com/?q=Taberna+Sal+Grosso+Lisbon" target="_blank">📍Taberna Sal Grosso São Bento</a></li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚋 交通建議：住宿 → Belém 區建議搭電車／公車前往；再一路沿河岸移動；下午 LX Factory → Bica → Chiado 可用電車或步行串接，19:00 餐廳建議至少提前 20 分鐘抵達。</strong></div>
             <div class="section-block">
                 <div class="section-title">🛍️ 備選逛街</div>
                 <ul>
@@ -432,9 +487,11 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
+                    <li><span class="badge bg-booked">已訂位 10:00</span><a class="booking-link" href="./pic/0928_1000_餐廳訂位.jpg" onclick="return toggleBookingImage(event, 'bookingImage2', this);">📎 訂位圖片</a><div id="bookingImage2" class="booking-image-preview"><img src="./pic/0928_1000_餐廳訂位.jpg" alt="訂位圖片"></div><div id="bookingImage2" class="booking-image-preview"><img src="./pic/0928_1000_餐廳訂位.jpg" alt="訂位圖片"></div> 餐廳: <a class="map-link" href="https://maps.app.goo.gl/bQyYwonANyZofyQz6" target="_blank">📍Breakfast Lovers Alfama</a></li>
                     <li><strong>下城區：</strong><a class="map-link" href="https://maps.google.com/?q=Pra%C3%A7a+do+Com%C3%A9rcio" target="_blank">📍商業廣場</a>、<a class="map-link" href="https://maps.google.com/?q=Arco+da+Rua+Augusta" target="_blank">📍奧古斯塔凱旋門</a>頂樓、<a class="map-link" href="https://maps.google.com/?q=Rossio+Square" target="_blank">📍Rossio 廣場</a>、<a class="map-link" href="https://maps.google.com/?q=Carmo+Convent" target="_blank">📍卡爾莫修道院</a></li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚶 交通建議：住宿 → Breakfast Lovers Alfama 可步行前往；之後這天景點集中在 Baixa／Rossio 一帶，最適合以步行為主；遇到上坡再搭電車或短程 Uber/Bolt，避免一直爬坡。</strong></div>
             <div class="section-block">
                 <div class="section-title">🍽️ 備選美食</div>
                 <ul>
@@ -458,9 +515,18 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li>退房後搭火車前往波多 (11:30~14:43)；從住宿搭計程車到 <a class="map-link" href="https://maps.google.com/?q=Santa+Apol%C3%B3nia+station" target="_blank">📍Santa Apolónia</a>，買到 Porto Campanhã 的車票，再轉乘到 <a class="map-link" href="https://maps.google.com/?q=Porto+S%C3%A3o+Bento" target="_blank">📍Porto Sao Bento</a>（出示長途車票即免費，離波多住宿最近）</li>
+                    <li>退房後搭火車前往波多 (11:30~14:43)</li>
+                    <li>從住宿搭計程車到 <a class="map-link" href="https://maps.google.com/?q=Santa+Apol%C3%B3nia+station" target="_blank">📍Santa Apolónia</a></li>
+                    <li>到 Porto Campanhã 的車票，再轉乘到 <a class="map-link" href="https://maps.google.com/?q=Porto+S%C3%A3o+Bento" target="_blank">📍Porto Sao Bento</a>（出示長途車票即免費，離波多住宿最近）</li>
+                    <li>
+                        <a class="booking-link" href="./pic/0929_1130_波多火車票_馬該.jpg" onclick="return toggleBookingImage(event, 'bookingImage_0929_1', this);">📎 馬該車票</a><div id="bookingImage_0929_1" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_馬該.jpg" alt="馬該車票"></div><div id="bookingImage_0929_1" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_馬該.jpg" alt="馬該車票"></div>
+                        <a class="booking-link" href="./pic/0929_1130_波多火車票_柔.jpg" onclick="return toggleBookingImage(event, 'bookingImage_0929_2', this);">📎 柔車票</a><div id="bookingImage_0929_2" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_柔.jpg" alt="柔車票"></div><div id="bookingImage_0929_2" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_柔.jpg" alt="柔車票"></div>
+                        <a class="booking-link" href="./pic/0929_1130_波多火車票_薇.jpg" onclick="return toggleBookingImage(event, 'bookingImage_0929_3', this);">📎 薇車票</a><div id="bookingImage_0929_3" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_薇.jpg" alt="薇車票"></div><div id="bookingImage_0929_3" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_薇.jpg" alt="薇車票"></div>
+                        <a class="booking-link" href="./pic/0929_1130_波多火車票_魚.jpg" onclick="return toggleBookingImage(event, 'bookingImage_0929_4', this);">📎 魚車票</a><div id="bookingImage_0929_4" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_魚.jpg" alt="魚車票"></div><div id="bookingImage_0929_4" class="booking-image-preview"><img src="./pic/0929_1130_波多火車票_魚.jpg" alt="魚車票"></div>
+                    </li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚕 交通建議：住宿（Rua Canastras 10）→ Santa Apolónia 建議直接 Uber/Bolt，帶行李比較省力；抵達 Porto Campanhã 後可搭市區火車到 São Bento，再步行／短程叫車到住宿。</strong></div>
             <div class="hotel-info">
                 🏠 <strong>住宿：</strong><a class="map-link" href="https://maps.google.com/?q=ApartmentsPorto+-+Leisure+Fun+Apartment" target="_blank">📍ApartmentsPorto - Leisure Fun Apartment</a>
             </div>
@@ -479,9 +545,10 @@
                 <ul>
                     <li><strong>波多市區巡禮：</strong><a class="map-link" href="https://maps.google.com/?q=Capela+das+Almas+Porto" target="_blank">📍Capela de Santa Catarina</a> & <a class="map-link" href="https://maps.google.com/?q=Igreja+Paroquial+de+Santo+Ildefonso" target="_blank">📍Igreja Paroquial de Santo Ildefonso</a>（美麗藍白磁磚外牆）、<a class="map-link" href="https://maps.google.com/?q=McDonald%27s+Imperial+Porto" target="_blank">📍帝國麥當勞</a>拍照、走到 <a class="map-link" href="https://maps.google.com/?q=Livraria+Lello" target="_blank">📍Livraria Lello 書店</a>（附近很多小店可以閒逛）、再走到 <a class="map-link" href="https://maps.google.com/?q=Igreja+do+Carmo+Porto" target="_blank">📍Igreja do Carmo 教堂</a>（拍外牆），隨意閒晃與吃飯</li>
                     <li><a class="map-link" href="https://maps.google.com/?q=Ribeira+Porto" target="_blank">📍Ribeira 河岸散步</a>、看夜景</li>
-                    <li><span class="badge bg-booked">已訂位 19:00</span> 晚餐餐廳: <a class="map-link" href="https://maps.google.com/?q=Est%C3%B4mago+Porto" target="_blank">📍Estômago</a> (4人，訂位人：Laura Lin)</li>
+                    <li><span class="badge bg-booked">已訂位 19:00</span>晚餐餐廳: <a class="map-link" href="https://maps.google.com/?q=Est%C3%B4mago+Porto" target="_blank">📍Estômago</a> (4人，訂位人：Laura Lin)</li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚶 交通建議：住宿 → Capela de Santa Catarina 建議步行前往；之後波多景點大多可步行串起，但地形高低差明顯；Ribeira 看完夜景回住宿若覺得累，建議直接叫 Uber/Bolt。</strong></div>
             <div class="section-block">
                 <div class="section-title">🛍️ 備選逛街</div>
                 <ul>
@@ -517,6 +584,7 @@
                     <li><span class="badge bg-booked">已訂位 19:00</span> 晚餐餐廳: <a class="map-link" href="https://maps.google.com/?q=Porta+4+Cangas+de+Onis" target="_blank">📍Porta 4</a> (4人，室內區，訂位人：Laura Lin)</li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚶 交通建議：住宿 → 證券交易所宮建議步行或搭短程交通前往；證券交易所宮 → 路易斯一世大橋可步行串聯；跨橋時可走上層看景，下橋後若不想爬坡，回程搭地鐵或叫車。</strong></div>
             <div class="section-block">
                 <div class="section-title">🛍️ 備選逛街</div>
                 <ul>
@@ -546,11 +614,20 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li>06:00 搭車至 <a class="map-link" href="https://maps.google.com/?q=TIC+Campanh%C3%A3" target="_blank">📍TIC Campanhã</a>，07:00 搭 FLIXBUS 到 Oviedo (16:05 抵達)</li>
-                    <li>轉 ALSA 巴士：Oviedo 17:15 → Cangas 18:50（已訂票）</li>
+                    <li><span class="badge bg-booked">已訂票</span>06:00 搭車至 <a class="map-link" href="https://maps.google.com/?q=TIC+Campanh%C3%A3" target="_blank">📍TIC Campanhã</a>，07:00 搭 FLIXBUS 到 Oviedo (16:05 抵達) <br/>
+                        <a class="booking-link" href="./pic/1002_其他資料_1.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1002_10', this);">📎 車票</a><div id="bookingImage_1002_10" class="booking-image-preview"><img src="./pic/1002_其他資料_1.jpg" alt="車票"></div><div id="bookingImage_1002_10" class="booking-image-preview"><img src="./pic/1002_其他資料_1.jpg" alt="車票"></div>
+                        <a class="booking-link" href="./pic/1002_其他資料_2.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1002_11', this);">📎 座位資訊</a><div id="bookingImage_1002_11" class="booking-image-preview"><img src="./pic/1002_其他資料_2.jpg" alt="座位資訊"></div><div id="bookingImage_1002_11" class="booking-image-preview"><img src="./pic/1002_其他資料_2.jpg" alt="座位資訊"></div>
+                    </li>
+                    <li><span class="badge bg-booked">已訂票</span>轉 ALSA 巴士：Oviedo 17:15 → Cangas 18:50 <br/>
+                        <a class="booking-link" href="./pic/1002_1715_ALSA巴士_馬該.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1002_1', this);">📎 馬該車票</a><div id="bookingImage_1002_1" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_馬該.jpg" alt="馬該車票"></div><div id="bookingImage_1002_1" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_馬該.jpg" alt="馬該車票"></div>
+                        <a class="booking-link" href="./pic/1002_1715_ALSA巴士_柔.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1002_2', this);">📎 柔車票</a><div id="bookingImage_1002_2" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_柔.jpg" alt="柔車票"></div><div id="bookingImage_1002_2" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_柔.jpg" alt="柔車票"></div>
+                        <a class="booking-link" href="./pic/1002_1715_ALSA巴士_薇.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1002_3', this);">📎 薇車票</a><div id="bookingImage_1002_3" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_薇.jpg" alt="薇車票"></div><div id="bookingImage_1002_3" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_薇.jpg" alt="薇車票"></div>
+                        <a class="booking-link" href="./pic/1002_1715_ALSA巴士_魚.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1002_4', this);">📎 魚車票</a><div id="bookingImage_1002_4" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_魚.jpg" alt="魚車票"></div><div id="bookingImage_1002_4" class="booking-image-preview"><img src="./pic/1002_1715_ALSA巴士_魚.jpg" alt="魚車票"></div>
+                    </li>
                     
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚌 交通建議：住宿 → TIC Campanhã 建議 06:00 直接搭 Uber/Bolt，避免清晨拖行李轉乘；之後搭 FLIXBUS 前往 Oviedo，轉 ALSA 時務必預留找站牌與上下車時間。</strong></div>
             <div class="hotel-info">
                 🏠 <strong>住宿：</strong><a class="map-link" href="https://maps.google.com/?q=El+Mirador+de+Cangas" target="_blank">📍El Mirador de Cangas VUT-17-AS y VUT-18-AS</a>
             </div>
@@ -567,12 +644,23 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li>08:00 搭車前往 <a class="map-link" href="https://maps.google.com/?q=Lagos+de+Covadonga" target="_blank">📍Lagos de Covadonga</a>（08:50 抵達）</li>
+                    <li><span class="badge bg-booked">已訂票</span>08:00 搭車前往 <a class="map-link" href="https://maps.google.com/?q=Lagos+de+Covadonga" target="_blank">📍Lagos de Covadonga</a>（08:50 抵達）<br/>
+                        <a class="booking-link" href="./pic/1003_0800_ALSA_馬該.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_1_1', this);">📎 馬該車票</a><div id="bookingImage_1003_1_1" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_馬該.jpg" alt="馬該車票"></div><div id="bookingImage_1003_1_1" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_馬該.jpg" alt="馬該車票"></div>
+                        <a class="booking-link" href="./pic/1003_0800_ALSA_柔.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_1_2', this);">📎 柔車票</a><div id="bookingImage_1003_1_2" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_柔.jpg" alt="柔車票"></div><div id="bookingImage_1003_1_2" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_柔.jpg" alt="柔車票"></div>
+                        <a class="booking-link" href="./pic/1003_0800_ALSA_薇.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_1_3', this);">📎 薇車票</a><div id="bookingImage_1003_1_3" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_薇.jpg" alt="薇車票"></div><div id="bookingImage_1003_1_3" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_薇.jpg" alt="薇車票"></div>
+                        <a class="booking-link" href="./pic/1003_0800_ALSA_魚.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_1_4', this);">📎 魚車票</a><div id="bookingImage_1003_1_4" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_魚.jpg" alt="魚車票"></div><div id="bookingImage_1003_1_4" class="booking-image-preview"><img src="./pic/1003_0800_ALSA_魚.jpg" alt="魚車票"></div>
+                    </li>
                     <li>環雙湖區、享用午餐</li>
-                    <li>回程搭 15:05 車，可在 <a class="map-link" href="https://maps.google.com/?q=Sanctuario+de+Covadonga" target="_blank">📍Covadonga 聖地</a> 下車晃晃，15:05 再搭接駁車回 Cangas (15:55 到)</li>
-                    <li><span class="badge bg-booked">已訂票</span> 買一日車票即可免費搭乘接駁車</li>
+                    <li><span class="badge bg-booked">已訂票</span>回程搭 15:05 車，可在 <a class="map-link" href="https://maps.google.com/?q=Sanctuario+de+Covadonga" target="_blank">📍Covadonga 聖地</a> 下車晃晃，15:05 再搭接駁車回 Cangas (15:55 到) <br/>
+                        <a class="booking-link" href="./pic/1003_1505_ALSA_馬該.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_2_1', this);">📎 馬該車票</a><div id="bookingImage_1003_2_1" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_馬該.jpg" alt="馬該車票"></div><div id="bookingImage_1003_2_1" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_馬該.jpg" alt="馬該車票"></div>
+                        <a class="booking-link" href="./pic/1003_1505_ALSA_柔.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_2_2', this);">📎 柔車票</a><div id="bookingImage_1003_2_2" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_柔.jpg" alt="柔車票"></div><div id="bookingImage_1003_2_2" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_柔.jpg" alt="柔車票"></div>
+                        <a class="booking-link" href="./pic/1003_1505_ALSA_薇.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_2_3', this);">📎 薇車票</a><div id="bookingImage_1003_2_3" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_薇.jpg" alt="薇車票"></div><div id="bookingImage_1003_2_3" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_薇.jpg" alt="薇車票"></div>
+                        <a class="booking-link" href="./pic/1003_1505_ALSA_魚.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1003_2_4', this);">📎 魚車票</a><div id="bookingImage_1003_2_4" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_魚.jpg" alt="魚車票"></div><div id="bookingImage_1003_2_4" class="booking-image-preview"><img src="./pic/1003_1505_ALSA_魚.jpg" alt="魚車票"></div>
+                    </li>
+                    <li>買一日車票即可免費搭乘接駁車</li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚌 交通建議：住宿 → Cangas de Onís 上車點建議步行或搭短程 Uber/Bolt；前往湖區以官方接駁車最方便，不建議臨時自駕；回程在 Covadonga 下車後要特別注意 15:05 的接駁時間。</strong></div>
             <div class="hotel-info">
                 🏠 <strong>住宿：</strong><a class="map-link" href="https://maps.google.com/?q=El+Mirador+de+Cangas" target="_blank">📍El Mirador de Cangas VUT-17-AS y VUT-18-AS</a>
             </div>
@@ -589,11 +677,22 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li>巴士：Cangas → Oviedo（1.5～2 小時）</li>
-                    <li>巴士：Oviedo → <a class="map-link" href="https://maps.google.com/?q=Asturias+Airport" target="_blank">📍Asturias 機場</a>（45 分鐘）</li>
-                    <li><span class="badge bg-flight">班機</span> Asturias 16:35 → 巴塞隆納 18:00</li>
+                    <li><span class="badge bg-booked">已訂票</span>巴士：8:15 Cangas → 9:55 Oviedo（1.5～2 小時）<br/>
+                        <a class="booking-link" href="./pic/1004_0815_ALSA_馬該.jpeg" onclick="return toggleBookingImage(event, 'bookingImage_1004_1_1', this);">📎 馬該車票</a><div id="bookingImage_1004_1_1" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_馬該.jpeg" alt="馬該車票"></div><div id="bookingImage_1004_1_1" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_馬該.jpeg" alt="馬該車票"></div>
+                        <a class="booking-link" href="./pic/1004_0815_ALSA_柔.jpeg" onclick="return toggleBookingImage(event, 'bookingImage_1004_1_2', this);">📎 柔車票</a><div id="bookingImage_1004_1_2" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_柔.jpeg" alt="柔車票"></div><div id="bookingImage_1004_1_2" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_柔.jpeg" alt="柔車票"></div>
+                        <a class="booking-link" href="./pic/1004_0815_ALSA_薇.jpeg" onclick="return toggleBookingImage(event, 'bookingImage_1004_1_3', this);">📎 薇車票</a><div id="bookingImage_1004_1_3" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_薇.jpeg" alt="薇車票"></div><div id="bookingImage_1004_1_3" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_薇.jpeg" alt="薇車票"></div>
+                        <a class="booking-link" href="./pic/1004_0815_ALSA_魚.jpeg" onclick="return toggleBookingImage(event, 'bookingImage_1004_1_4', this);">📎 魚車票</a><div id="bookingImage_1004_1_4" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_魚.jpeg" alt="魚車票"></div><div id="bookingImage_1004_1_4" class="booking-image-preview"><img src="./pic/1004_0815_ALSA_魚.jpeg" alt="魚車票"></div>
+                    </li>
+                    <li><span class="badge bg-booked">已訂票</span>巴士：13:30 Oviedo → <a class="map-link" href="https://maps.google.com/?q=Asturias+Airport" target="_blank">14:15 📍Asturias 機場</a>（45 分鐘）<br/>
+                        <a class="booking-link" href="./pic/1004_1330_ALSA_馬該.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1004_2_1', this);">📎 馬該車票</a><div id="bookingImage_1004_2_1" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_馬該.jpg" alt="馬該車票"></div><div id="bookingImage_1004_2_1" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_馬該.jpg" alt="馬該車票"></div>
+                        <a class="booking-link" href="./pic/1004_1330_ALSA_柔.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1004_2_2', this);">📎 柔車票</a><div id="bookingImage_1004_2_2" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_柔.jpg" alt="柔車票"></div><div id="bookingImage_1004_2_2" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_柔.jpg" alt="柔車票"></div>
+                        <a class="booking-link" href="./pic/1004_1330_ALSA_薇.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1004_2_3', this);">📎 薇車票</a><div id="bookingImage_1004_2_3" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_薇.jpg" alt="薇車票"></div><div id="bookingImage_1004_2_3" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_薇.jpg" alt="薇車票"></div>
+                        <a class="booking-link" href="./pic/1004_1330_ALSA_魚.jpg" onclick="return toggleBookingImage(event, 'bookingImage_1004_2_4', this);">📎 魚車票</a><div id="bookingImage_1004_2_4" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_魚.jpg" alt="魚車票"></div><div id="bookingImage_1004_2_4" class="booking-image-preview"><img src="./pic/1004_1330_ALSA_魚.jpg" alt="魚車票"></div>
+                    </li>
+                    <li><span class="badge bg-flight">班機</span> Asturias 16:35 → 巴塞隆納 18:00 <a class="booking-link" href="./pdf/1004_to_barcelona.html" target="_blank">📎 訂位pdf</a></li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚕 交通建議：住宿 → Cangas 巴士上車點建議步行或搭短程 Uber/Bolt；Cangas → Oviedo 建議搭巴士；Oviedo → Asturias 機場建議直接搭機場巴士或計程車，因為 16:35 航班不適合壓線。</strong></div>
             <div class="hotel-info">
                 🏠 <strong>住宿：</strong><a class="map-link" href="https://maps.google.com/?q=Avenida+Gaudi+Barcelona" target="_blank">📍Avenida gaudi view 2-min to sagrada</a>
             </div>
@@ -610,10 +709,11 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li><span class="badge bg-booked">已預約</span> <a class="map-link" href="https://maps.google.com/?q=Bas%C3%ADlica+de+la+Sagrada+Fam%C3%ADlia" target="_blank">📍13:30 聖家堂 (Sagrada Família)</a>（14:30 登塔時間）</li>
+                    <li><span class="badge bg-booked">已預約</span><a class="booking-link" href="./pdf/1005_1330_聖家堂門票.pdf" target="_blank">📎 pdf</a> <a class="map-link" href="https://maps.google.com/?q=Bas%C3%ADlica+de+la+Sagrada+Fam%C3%ADlia" target="_blank">📍13:30 聖家堂 (Sagrada Família)</a>（14:30 登塔時間）</li>
                     <li>參觀 <a class="map-link" href="https://maps.google.com/?q=Hospital+de+Sant+Pau" target="_blank">📍聖保羅十字醫院</a>（離聖家堂走路約15分鐘）</li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚇 交通建議：住宿 → 聖家堂（Sagrada Família）因住宿就在聖家堂附近，建議直接步行；聖家堂 → 聖保羅十字醫院也直接步行即可；若下午跨區逛街，再搭地鐵會比公車更容易掌握時間。</strong></div>
             <div class="section-block">
                 <div class="section-title">🛍️ 備選逛街</div>
                 <ul>
@@ -646,8 +746,8 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li><strong>柔該魚：</strong><a class="map-link" href="https://maps.google.com/?q=Montserrat+Monastery" target="_blank">📍蒙哲臘修道院</a>半日遊、山景修道院、回市區購物與最後晚餐</li>
-                    <li><strong>柔該魚：</strong><a class="map-link" href="https://maps.google.com/?q=Tossa+de+Mar" target="_blank">📍濱海托薩 (Tossa de Mar)</a> 海邊小鎮一日遊、海灘、城牆、享用海鮮飯</li>
+                    <li><strong>柔該魚：</strong><a class="map-link" href="https://maps.google.com/?q=Montserrat+Monastery" target="_blank">📍蒙哲臘修道院</a>半日遊、山景修道院、回市區購物與最後晚餐 or</li>
+                    <a class="map-link" href="https://maps.google.com/?q=Tossa+de+Mar" target="_blank">📍濱海托薩 (Tossa de Mar)</a> 海邊小鎮一日遊、海灘、城牆、享用海鮮飯</li>
                     <li><strong>薇：</strong>達利戲劇博物館 ➔ 13:30 前往 Cadaques（約14:30抵達，走路20分鐘）➔ 17:00 BUS 3 出發</li>
                 </ul>
             </div>
@@ -668,9 +768,13 @@
                 <div class="section-title">📍 主要行程</div>
                 <ul>
                     <li>早上參觀 <a class="map-link" href="https://maps.google.com/?q=Casa+Batll%C3%B3" target="_blank">📍巴特婁之家</a>，可路過米拉之家外面拍照</li>
-                    <li><span class="badge bg-booked">已預約</span> <a class="map-link" href="https://maps.google.com/?q=Park+G%C3%BCell" target="_blank">📍17:00 奎爾之家 / 奎爾公園導覽</a></li>
+                    <li><span class="badge bg-booked">已預約</span>
+                    <a class="map-link" href="https://maps.google.com/?q=Park+G%C3%BCell" target="_blank">📍17:00 奎爾之家 / 奎爾公園導覽
+                    <a class="booking-link" href="./pdf/1007_奎爾公園導覽_合併.pdf" target="_blank">📎 門票+資訊pdf</a>
+                    </li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚇 交通建議：住宿 → 巴特婁之家建議搭地鐵／公車前往；巴特婁之家 → 奎爾公園也建議搭地鐵／公車，兩地距離不適合全程步行；17:00 預約建議至少提前 30 分鐘往公園方向移動。</strong></div>
             <div class="section-block">
                 <div class="section-title">🛍️ 備選逛街</div>
                 <ul>
@@ -703,10 +807,11 @@
             <div class="section-block">
                 <div class="section-title">✈️ 航班/成員分流</div>
                 <ul>
-                    <li><span class="badge bg-flight">班機</span> 柔、該、魚：10:45 起飛返台</li>
-                    <li><span class="badge bg-flight">班機</span> 宇薇：15:35 飛鹿特丹（17:50 到）</li>
+                    <li><span class="badge bg-flight">班機</span> 柔、該、魚：10:45 起飛返台 <a class="booking-link" href="#" onclick="return false;">📎 訂位圖片</a></li>
+                    <li><span class="badge bg-flight">班機</span> 宇薇：15:35 飛鹿特丹（17:50 到） <a class="booking-link" href="#" onclick="return false;">📎 訂位圖片</a></li>
                 </ul>
             </div>
+            <div class="transport-info"><strong>🚇 交通建議：住宿（Avinguda Gaudí 73）→ 巴塞隆納機場：步行到 Sagrada Família 站，搭地鐵 L5 往 Cornellà Centre 方向到 Collblanc，轉 L9 Sud 前往 Aeroport T1／T2（依航廈下車）；若行李多可直接 Uber/Bolt。依各自航班時間提早出發，15:35 航班建議至少提前 2 小時到機場。</strong></div>
         </div>
     </div>
 
@@ -743,6 +848,30 @@
         document.getElementById(dayId).classList.add("active");
         evt.currentTarget.classList.add("active");
     }
+</script>
+
+
+<script>
+function toggleBookingImage(event, id, link) {
+    event.preventDefault();
+    var imageBox = document.getElementById(id);
+    if (!imageBox) return false;
+
+    // 第一次點擊時，記住原本的文字
+    if (!link.dataset.originalText) {
+        link.dataset.originalText = link.textContent;
+    }
+
+    if (imageBox.style.display === "block") {
+        imageBox.style.display = "none";
+        link.textContent = link.dataset.originalText;
+    } else {
+        imageBox.style.display = "block";
+        link.textContent = "📎 收起圖片";
+    }
+
+    return false;
+}
 </script>
 
 </body>
