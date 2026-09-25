@@ -302,6 +302,8 @@
         <button class="tab-btn" onclick="openTab(event, 'day-1007')">10/7 (三)</button>
         <button class="tab-btn" onclick="openTab(event, 'day-1008')">10/8 (四)</button>
         <button class="tab-btn" onclick="openTab(event, 'day-1009')">10/9 (五)</button>
+        <button class="tab-btn" onclick="openTab(event, 'day-1010')">10/10 (六)</button>
+        <button class="tab-btn" onclick="openTab(event, 'day-1011')">10/11 (日)</button>
     </div>
 
     <!-- 9/22 -->
@@ -411,6 +413,7 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
+                    <li><span class="badge bg-booked">行李寄放</span><a class="booking-link" href="./pic/0926_行李寄放.jpg" onclick="return toggleBookingImage(event, 'bookingImage1', this);">📎 寄放截圖</a><div id="bookingImage1" class="booking-image-preview"><img src="./pic/0926_行李寄放.jpg" alt="寄放截圖"></div><div id="bookingImage1" class="booking-image-preview"><img src="./pic/0926_行李寄放.jpg" alt="寄放截圖"></div> 寄放位置: <a class="map-link" href="https://maps.app.goo.gl/gbcFzZNmH88Djbc76" target="_blank">📍Lisbon Lounge Hostel</a></li>
                     <li><strong>阿爾法瑪區：</strong><a class="map-link" href="https://maps.google.com/?q=Feira+da+Ladr%C3%A3" target="_blank">📍女賊市集 Feira da Ladra</a>、<a class="map-link" href="https://maps.google.com/?q=Castelo+de+S%C3%A3o+Jorge" target="_blank">📍聖若熱城堡</a>夕陽（日落時間約七點）</li>
                     <li>視情況可加：<a class="map-link" href="https://maps.google.com/?q=Miradouro+das+Portas+do+Sol" target="_blank">📍Miradouro das Portas do Sol 觀景台</a></li>
                 </ul>
@@ -544,6 +547,7 @@
                 <div class="section-title">📍 主要行程</div>
                 <ul>
                     <li><strong>波多市區巡禮：</strong><a class="map-link" href="https://maps.google.com/?q=Capela+das+Almas+Porto" target="_blank">📍Capela de Santa Catarina</a> & <a class="map-link" href="https://maps.google.com/?q=Igreja+Paroquial+de+Santo+Ildefonso" target="_blank">📍Igreja Paroquial de Santo Ildefonso</a>（美麗藍白磁磚外牆）、<a class="map-link" href="https://maps.google.com/?q=McDonald%27s+Imperial+Porto" target="_blank">📍帝國麥當勞</a>拍照、走到 <a class="map-link" href="https://maps.google.com/?q=Livraria+Lello" target="_blank">📍Livraria Lello 書店</a>（附近很多小店可以閒逛）、再走到 <a class="map-link" href="https://maps.google.com/?q=Igreja+do+Carmo+Porto" target="_blank">📍Igreja do Carmo 教堂</a>（拍外牆），隨意閒晃與吃飯</li>
+                    <li><span class="badge bg-booked">已訂位 12:30</span><a class="booking-link" href="./pic/0930_1230_餐廳.jpg" onclick="return toggleBookingImage(event, 'bookingImage_0930_1230', this);">📎 訂位圖片</a><div id="bookingImage_0930_1230" class="booking-image-preview"><img src="./pic/0930_1230_餐廳.jpg" alt="訂位圖片"></div><div id="bookingImage_0930_1230" class="booking-image-preview"><img src="./pic/0928_1000_餐廳訂位.jpg" alt="訂位圖片"></div> 餐廳: <a class="map-link" href="https://maps.app.goo.gl/Y4dDp9tsCntKcTKy5" target="_blank">📍Brasão Coliseu</a></li>
                     <li><a class="map-link" href="https://maps.google.com/?q=Ribeira+Porto" target="_blank">📍Ribeira 河岸散步</a>、看夜景</li>
                     <li><span class="badge bg-booked">已訂位 19:00</span>晚餐餐廳: <a class="map-link" href="https://maps.google.com/?q=Est%C3%B4mago+Porto" target="_blank">📍Estômago</a> (4人，訂位人：Laura Lin)</li>
                 </ul>
@@ -748,7 +752,12 @@
                 <ul>
                     <li><strong>柔該魚：</strong><a class="map-link" href="https://maps.google.com/?q=Montserrat+Monastery" target="_blank">📍蒙哲臘修道院</a>半日遊、山景修道院、回市區購物與最後晚餐 or</li>
                     <a class="map-link" href="https://maps.google.com/?q=Tossa+de+Mar" target="_blank">📍濱海托薩 (Tossa de Mar)</a> 海邊小鎮一日遊、海灘、城牆、享用海鮮飯</li>
-                    <li><strong>薇：</strong>達利戲劇博物館 ➔ 13:30 前往 Cadaques（約14:30抵達，走路20分鐘）➔ 17:00 BUS 3 出發</li>
+
+                    <li><strong>薇：</strong><span class="badge bg-booked">已預約</span>
+                    <a class="map-link" href="https://maps.app.goo.gl/Uo6AfMEuEL4nyakEA" target="_blank">📍11:15 達利戲劇博物館
+                    <a class="booking-link" href="./pdf/1006_1115_達利戲劇博物館門票.pdf" target="_blank">📎 門票pdf</a>
+                    </li>
+                    <li></li>
                 </ul>
             </div>
             <div class="hotel-info">
@@ -767,7 +776,11 @@
             <div class="section-block">
                 <div class="section-title">📍 主要行程</div>
                 <ul>
-                    <li>早上參觀 <a class="map-link" href="https://maps.google.com/?q=Casa+Batll%C3%B3" target="_blank">📍巴特婁之家</a>，可路過米拉之家外面拍照</li>
+                    <li><span class="badge bg-booked">已預約</span>
+                    <a class="map-link" href="https://maps.app.goo.gl/eFqWVfAadgnZohJw6" target="_blank">📍8:30 巴特婁之家 早餐+導覽
+                    <a class="booking-link" href="./pdf/1007_巴特婁之家早餐門票.pdf" target="_blank">📎 門票pdf</a>
+                    </li>
+                    <li>可以路過<a class="map-link" href="https://maps.app.goo.gl/oNg4UmssXBoDJT3j6" target="_blank"> 📍米拉之家</a> 拍照</li>
                     <li><span class="badge bg-booked">已預約</span>
                     <a class="map-link" href="https://maps.google.com/?q=Park+G%C3%BCell" target="_blank">📍17:00 奎爾之家 / 奎爾公園導覽
                     <a class="booking-link" href="./pdf/1007_奎爾公園導覽_合併.pdf" target="_blank">📎 門票+資訊pdf</a>
@@ -807,8 +820,8 @@
             <div class="section-block">
                 <div class="section-title">✈️ 航班/成員分流</div>
                 <ul>
-                    <li><span class="badge bg-flight">班機</span> 柔、該、魚：10:45 起飛返台 <a class="booking-link" href="#" onclick="return false;">📎 訂位圖片</a></li>
-                    <li><span class="badge bg-flight">班機</span> 宇薇：15:35 飛鹿特丹（17:50 到） <a class="booking-link" href="#" onclick="return false;">📎 訂位圖片</a></li>
+                    <li><span class="badge bg-flight">班機</span> 柔、該、魚：10:45 起飛返台</li>
+                    <li><span class="badge bg-flight">班機</span> 宇薇：15:35 飛鹿特丹（17:50 到</li>
                 </ul>
             </div>
             <div class="transport-info"><strong>🚇 交通建議：住宿（Avinguda Gaudí 73）→ 巴塞隆納機場：步行到 Sagrada Família 站，搭地鐵 L5 往 Cornellà Centre 方向到 Collblanc，轉 L9 Sud 前往 Aeroport T1／T2（依航廈下車）；若行李多可直接 Uber/Bolt。依各自航班時間提早出發，15:35 航班建議至少提前 2 小時到機場。</strong></div>
@@ -820,12 +833,53 @@
         <div class="day-card">
             <div class="day-header">
                 <span class="date">10/9（五）</span>
-                <span class="location">抵達台灣</span>
+                <span class="location">鹿特丹</span>
             </div>
             <div class="section-block">
                 <div class="section-title">🛬 抵達</div>
                 <ul>
                     <li>柔該魚：10:00 抵達桃園機場</li>
+                </ul>
+            </div>
+            <div class="section-block">
+                <div class="section-title">📍 主要行程</div>
+                <ul>
+                    <li>方塊屋、小孩堤防、國家博物館</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10/10 -->
+    <div id="day-1010" class="tab-content">
+        <div class="day-card">
+            <div class="day-header">
+                <span class="date">10/10（六）</span>
+                <span class="location">鹿特丹 → 阿姆斯特丹</span>
+            </div>
+            <div class="section-block">
+                <div class="section-title">📍 主要行程</div>
+                <ul>
+                    <li><span class="badge bg-booked">已預約</span>
+                    <a class="map-link" href="https://maps.app.goo.gl/eS4vzALoVn7zWScZ7" target="_blank">📍14:00 梵谷美術館 門票+語音導覽</a>
+                    <a class="booking-link" href="./pdf/1010_1400_梵谷美術館.pdf" target="_blank">📎 門票pdf</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10/11 -->
+    <div id="day-1011" class="tab-content">
+        <div class="day-card">
+            <div class="day-header">
+                <span class="date">10/11（日）</span>
+                <span class="location">返程搭機</span>
+            </div>
+            <div class="section-block">
+                <div class="section-title">✈️ 航班</div>
+                <ul>
+                    <li><span class="badge bg-flight">班機</span> 宇薇：10:25 回台灣（10/12 10:00 到） <a class="booking-link" href="./pdf/薇_來回機票.pdf" target="_blank">📎 機票pdf</a></li>
                 </ul>
             </div>
         </div>
